@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElevenLabs - Bring Your Words to Life</title>
     <style>
+        /* ===== MUSIC PLAYER ===== */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 1rem 1.5rem;
+            border-radius: 20px;
+            z-index: 2000;
+            width: 260px;
+            text-align: center;
+        }
+
+        .music-player p {
+            color: #fff;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+        }
+
+        .music-player audio {
+            width: 100%;
+        }
+
         /* ===== RESET & BASE ===== */
         * {
             margin: 0;
@@ -1370,5 +1393,13 @@
             }
         }
     </script>
+    <!-- MUSIC PLAYER -->
+    <div class="music-player glass">
+        <p>🎵 Background Music</p>
+        <audio controls loop>
+            <source src="The lights are glowing on the street bel.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
 </body>
 </html>
